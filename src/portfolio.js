@@ -48,11 +48,9 @@ const skillsSection = {
   title: "What I do",
   subTitle: "Full stack data scientist with expertise in client-facing interactions and MLOps tooling.",
   skills: [
-    emoji("⚡ Well-versed in client-facing interactions."),
     emoji("⚡ Process-driven data scientist."),
-    emoji(
-      "⚡ Experienced at transitioning proof-of-concepts to production-level deployments."
-    )
+    emoji("⚡ Well-versed in client-facing interactions."),
+    emoji("⚡ Experienced at building scalable production-level deployments.")
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
