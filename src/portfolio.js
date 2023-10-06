@@ -26,7 +26,7 @@ const greeting = {
     "I am a Neuroscientist 🧠 turned Data Scientist 👨‍💻 with 9+ years experience using machine learning to make data-driven discoveries and deliver business solutions."
   ),
   resumeLink:
-    "https://www.dropbox.com/s/ztqosd1gv617tw3/JC_Resume_230707.pdf?dl=0", // Set to empty to hide the button
+    "https://www.dropbox.com/scl/fi/25golu6i4oh7gcal0iqz8/JC_Resume_PRODUCT.pdf?rlkey=3lxugz9xevbz6lo8w1k9oehzd&dl=0", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -37,6 +37,7 @@ const socialMediaLinks = {
   linkedin: "https://www.linkedin.com/in/jacheung415/",
   gmail: "jacheung415@gmail.com",
   twitter: "https://twitter.com/JonCheung6",
+  medium: "https://medium.com/@jacheung415",
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
   display: true // Set true to display this section, defaults to false
