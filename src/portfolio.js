@@ -144,7 +144,7 @@ const workExperiences = {
     {
       role: "Specialist Solutions Architect",
       company: "Databricks",
-      companylogo: require("./assets/images/beyondLimitsLogo.png"),
+      companylogo: require("./assets/images/databricksLogo.png"),
       date: "July 2024 – Present",
       desc: "Machine learning + GenAI major and data engineering minor. Notable projects include:",
       descBullets: [
