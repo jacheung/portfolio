@@ -142,10 +142,20 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
+      role: "Specialist Solutions Architect",
+      company: "Databricks",
+      companylogo: require("./assets/images/beyondLimitsLogo.png"),
+      date: "July 2024 – Present",
+      desc: "Machine learning + GenAI major and data engineering minor. Notable projects include:",
+      descBullets: [
+        "TBD..."
+      ]
+    },
+    {
       role: "Senior Data Scientist",
       company: "Beyond Limits",
       companylogo: require("./assets/images/beyondLimitsLogo.png"),
-      date: "Nov 2021 – Present",
+      date: "Nov 2021 – July 2024",
       desc: "Data science lead for scoping POCs and bringing MVPs to life. Projects include:",
       descBullets: [
         "Battery life-cycle prediction to reduce testing time",
@@ -354,7 +364,7 @@ const twitterDetails = {
   display: false // Set true to display this section, defaults to false
 };
 
-const isHireable = true; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
+const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
 
 export {
   illustration,
