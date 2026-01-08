@@ -23,7 +23,7 @@ const greeting = {
   username: "Jonathan Cheung",
   title: "Hey, I'm Jon",
   subTitle: emoji(
-    "I am a Neuroscientist 🧠 turned Data Scientist 👨‍💻 with 10+ years experience using machine learning to make data-driven discoveries and deliver business solutions."
+    "I am a Neuroscientist 🧠 turned Data Scientist and Machine Learning Engineer 👨‍💻 with 10+ years experience using machine learning to make data-driven discoveries and deliver business solutions at scale."
   ),
   resumeLink:
     "https://www.dropbox.com/scl/fi/25golu6i4oh7gcal0iqz8/JC_Resume_PRODUCT.pdf?rlkey=3lxugz9xevbz6lo8w1k9oehzd&dl=0", // Set to empty to hide the button
@@ -49,9 +49,9 @@ const skillsSection = {
   title: "What I do",
   subTitle: "Full stack data scientist with expertise in client-facing interactions and MLOps tooling.",
   skills: [
+    emoji("⚡ Experienced at building scalable production-level deployments."),
     emoji("⚡ Process-driven data scientist."),
     emoji("⚡ Well-versed in client-facing interactions."),
-    emoji("⚡ Experienced at building scalable production-level deployments.")
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
@@ -148,8 +148,9 @@ const workExperiences = {
       date: "July 2024 – Present",
       desc: "Machine learning + GenAI major and data engineering minor. Notable projects include:",
       descBullets: [
-        "Scaling forecasting training and inference workloads for optimal performance on 100,000+ models",
-        "Distributed training and inference of large-scale forecasting across multi-node clusters"
+        "Scaling forecasting training and inference workloads on 100k+ models",
+        "Distributed training and inference for large-scale models across multi-node clusters"
+        "Ray field champion, scaling machine learning workloads on Databricks" 
       ]
     },
     {
