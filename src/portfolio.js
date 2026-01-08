@@ -149,7 +149,7 @@ const workExperiences = {
       desc: "Machine learning + GenAI major and data engineering minor. Notable projects include:",
       descBullets: [
         "Scaling forecasting training and inference workloads on 100k+ models",
-        "Distributed training and inference for large-scale models across multi-node clusters"
+        "Distributed training and inference for large-scale models across multi-node clusters",
         "Ray field champion, scaling machine learning workloads on Databricks" 
       ]
     },
