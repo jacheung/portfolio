@@ -1,31 +1,49 @@
 # This file is the main docker file configurations
 
-# Official Node JS runtime as a parent image
-# FROM node:10.16.0-alpine
 # Use the latest Node.js LTS (v24) runtime as the base image
 FROM node:24-alpine
+
+# Copy package files first to leverage Docker layer caching
+COPY package*.json ./
+
+# Install dependencies
+# Using 'npm ci' is preferred for automated environments as it's faster and more reliable
+RUN npm ci
+
+# Bundle app source
+COPY . .
+
+# Make port 3000 available
+EXPOSE 3000
+
+# Start the application
+CMD ["npm", "start"]
 
 # Set the working directory to ./app
 WORKDIR /app
 
-# Install app dependencies
-# A wildcard is used to ensure both package.json AND package-lock.json are copied
-# where available (npm@5+)
-COPY package.json ./
 
-RUN apk add --no-cache git
+# # Official Node JS runtime as a parent image
+# # FROM node:10.16.0-alpine
 
-# Install any needed packages
-RUN npm install
+# # Install app dependencies
+# # A wildcard is used to ensure both package.json AND package-lock.json are copied
+# # where available (npm@5+)
+# COPY package.json ./
 
-# Audit fix npm packages
-RUN npm audit fix
+# RUN apk add --no-cache git
 
-# Bundle app source
-COPY . /app
+# # Install any needed packages
+# RUN npm install
 
-# Make port 3000 available to the world outside this container
-EXPOSE 3000
+# # Audit fix npm packages
+# RUN npm audit fix
 
-# Run app.js when the container launches
-CMD ["npm", "start"]
+# # Bundle app source
+# COPY . /app
+
+# # Make port 3000 available to the world outside this container
+# EXPOSE 3000
+
+# # Run app.js when the container launches
+# CMD ["npm", "start"]
